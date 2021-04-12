@@ -1,0 +1,31 @@
+.home__nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 6px;
+}
+
+.home__nav__menu {
+  display: flex;
+}
+
+.home__nav__menu :is(.google__service, .google__menu) {
+  display: flex;
+  align-items: center;
+}
+
+.home__nav__menu .google__service a {
+  padding-left: 15px;
+  font-size: 0.8125rem;
+}
+.home__nav__menu .google__menu {
+  margin-left: 15px;
+}
+
+.home__nav__menu .google__menu button {
+  padding: 8px;
+}
+.home__nav__menu .google__menu .MuiAvatar-root {
+  width: 32px;
+  height: 32px;
+}

@@ -4,7 +4,6 @@
   --white: #ffffff;
   --blue: #1a0dab;
   --purple: #660099;
-  font-size: 1em;
 }
 /* 13,14,15,20 */
 * {
@@ -13,8 +12,6 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: var(--white);
 }
 
@@ -40,9 +37,4 @@ a:visited {
 }
 a.button {
   color: var(--gray-dark);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
