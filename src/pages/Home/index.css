@@ -1,3 +1,8 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .home__nav {
   display: flex;
   justify-content: flex-end;
@@ -28,4 +33,42 @@
 .home__nav__menu .google__menu .MuiAvatar-root {
   width: 32px;
   height: 32px;
+}
+
+/* home body */
+.home__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home__body__top {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.home__body__mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 140px;
+  padding: 26px 16px 0;
+}
+.home__body__mid__action {
+  margin-top: 14px;
+}
+.home__body__mid__action button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  text-transform: none;
+  padding: 6px 16px;
+  margin: 11px 4px;
+}
+.home__body__mid__action button:hover {
+  background-image: linear-gradient(to top, #eeeeee, #f8f8f8);
+}
+.home__body__bottom {
+  flex: 1;
 }
