@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from 'components/SearchBar';
 import UserProfile from 'components/UserProfile';
-import SearchIcon from '@material-ui/icons/Search';
 import Footer from 'components/Footer';
 import './index.css';
 const SearchResult = () => {
