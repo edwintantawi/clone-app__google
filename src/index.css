@@ -3,6 +3,7 @@
   --gray-dark: #4d5156;
   --white: #ffffff;
   --blue: #1a0dab;
+  --light-blue: #4285f4;
   --purple: #660099;
 }
 /* 13,14,15,20 */
@@ -37,4 +38,8 @@ a:visited {
 }
 a.button {
   color: var(--gray-dark);
+}
+
+.container {
+  margin-left: 129px;
 }

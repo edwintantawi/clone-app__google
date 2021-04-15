@@ -7,8 +7,13 @@
   align-items: center;
   padding: 4px 14px;
   border-radius: 999px;
+  height: 44px;
 }
 .search:hover {
+  box-shadow: 0 2px 6px var(--gray);
+}
+
+.search.focused {
   box-shadow: 0 2px 6px var(--gray);
 }
 .search input {
@@ -23,7 +28,7 @@
 
 .search hr {
   width: 1px;
-  height: 62%;
+  height: 26px;
   border: 1px solid var(--gray);
   margin: 0 12px;
 }
@@ -31,6 +36,12 @@
 .search .MuiSvgIcon-root {
   font-size: 20px;
   color: var(--gray-dark);
+}
+.search .MuiSvgIcon-root.active {
+  color: var(--light-blue);
+  margin: 0 2px 0 16px;
+  cursor: pointer;
+  font-size: 24px;
 }
 .search .clickable {
   cursor: pointer;

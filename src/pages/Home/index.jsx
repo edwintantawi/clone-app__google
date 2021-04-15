@@ -1,10 +1,10 @@
 import React from 'react';
-import AppsIcon from '@material-ui/icons/Apps';
-import { Avatar, Button, IconButton } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 import './index.css';
 import SearchBar from 'components/SearchBar';
 import Footer from 'components/Footer';
+import UserProfile from 'components/UserProfile';
 const Home = () => {
   return (
     <div className="home">
@@ -21,14 +21,7 @@ const Home = () => {
               Images
             </a>
           </div>
-          <div className="google__menu">
-            <IconButton>
-              <AppsIcon />
-            </IconButton>
-            <IconButton>
-              <Avatar />
-            </IconButton>
-          </div>
+          <UserProfile />
         </div>
       </nav>
 
@@ -46,7 +39,7 @@ const Home = () => {
             <Button>I'm Feeling Lucky</Button>
           </div>
         </div>
-        <div className="home__body__bottom">{/*  */}</div>
+        <div className="home__body__bottom"></div>
       </main>
 
       <Footer>

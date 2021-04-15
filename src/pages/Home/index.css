@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.home__nav__menu :is(.google__service, .google__menu) {
+.home__nav__menu .google__service {
   display: flex;
   align-items: center;
 }
@@ -23,17 +23,6 @@
   padding-left: 15px;
   font-size: 0.8125rem;
   color: #000000da;
-}
-.home__nav__menu .google__menu {
-  margin-left: 15px;
-}
-
-.home__nav__menu .google__menu button {
-  padding: 8px;
-}
-.home__nav__menu .google__menu .MuiAvatar-root {
-  width: 32px;
-  height: 32px;
 }
 
 /* home body */

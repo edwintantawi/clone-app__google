@@ -1,0 +1,13 @@
+.userProfile {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.userProfile button {
+  padding: 8px;
+}
+.userProfile .MuiAvatar-root {
+  width: 32px;
+  height: 32px;
+}
