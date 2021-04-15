@@ -80,7 +80,7 @@ const Home = () => {
               href="https://google.com/search/howsearchworks/?fg=1"
               className="button"
             >
-              How Search Works
+              How Search works
             </a>
           </li>
         </ul>
@@ -102,7 +102,7 @@ const Home = () => {
               Terms
             </a>
           </li>
-          <li>Setting</li>
+          <li>Settings</li>
         </ul>
       </Footer>
     </div>
