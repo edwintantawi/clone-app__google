@@ -1,7 +1,10 @@
-.search {
-  background-color: var(--white);
+form {
   max-width: 100%;
   width: 582px;
+}
+.search {
+  background-color: var(--white);
+  width: 100%;
   border: 1px solid var(--gray);
   display: flex;
   align-items: center;
@@ -45,4 +48,8 @@
 }
 .search .clickable {
   cursor: pointer;
+}
+
+.hide {
+  display: none;
 }

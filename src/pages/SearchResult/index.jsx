@@ -10,13 +10,18 @@ import icon_shopping from 'assets/shopping.svg';
 import icon_videos from 'assets/videos.svg';
 import icon_more from 'assets/more.svg';
 import './index.css';
-
-// bp 960px
+import Result from 'components/Result';
+import useGoogleSearch from 'hooks/useGoogleSearch';
+import { useStateValue } from 'provider/stateProvider';
 
 const SearchResult = () => {
+  const [{ term }] = useStateValue();
+  const { data } = useGoogleSearch(term);
+  console.info(data, term);
+
   return (
-    <div className="searchResult">
-      <nav className="searchResult__nav">
+    <div className="searchResults">
+      <nav className="searchResults__nav">
         <div className="wrapper" id="navigation">
           <div className="wrapper">
             <Link to="/" className="brand">
@@ -25,13 +30,13 @@ const SearchResult = () => {
                 alt="google"
               />
             </Link>
-            <SearchBar isResult />
+            <SearchBar isResult value={term} />
           </div>
           <UserProfile className="floating" />
         </div>
       </nav>
 
-      <div className="searchResult__navigation">
+      <div className="searchResults__navigation">
         <div className="container">
           <ul>
             <li className="active">
@@ -66,8 +71,26 @@ const SearchResult = () => {
         </div>
       </div>
 
-      <main className="result">
-        <h1>main</h1>
+      <main className="results">
+        {data && (
+          <>
+            <div className="results__stats">
+              <div className="container">
+                <p>
+                  About {data.searchInformation.formattedTotalResults} Results (
+                  {data.searchInformation.formattedSearchTime} seconds)
+                </p>
+              </div>
+            </div>
+            <div className="results__contents">
+              <div className="container">
+                {data.items.map((result, idx) => (
+                  <Result data={result} key={idx} />
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </main>
 
       <Footer>

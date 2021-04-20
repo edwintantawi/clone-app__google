@@ -4,10 +4,12 @@
   margin-left: 15px;
 }
 
-.userProfile.floating {
-  position: absolute;
-  right: 0;
-  top: 6px;
+@media screen and (max-width: 968px) {
+  .userProfile.floating {
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
 }
 
 .userProfile button {

@@ -1,0 +1,19 @@
+.result {
+  max-width: 600px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.result__url {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 6px;
+}
+
+.result__title {
+  display: block;
+  margin-bottom: 8px;
+}
+.result__description {
+  line-height: 1.5;
+}

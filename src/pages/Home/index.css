@@ -39,6 +39,12 @@
   align-items: flex-end;
   justify-content: center;
 }
+
+@media screen and (max-width: 960px) {
+  .home__body__top img {
+    width: 50%;
+  }
+}
 .home__body__mid {
   display: flex;
   flex-direction: column;

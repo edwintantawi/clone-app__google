@@ -1,10 +1,8 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
-
-import './index.css';
 import SearchBar from 'components/SearchBar';
 import Footer from 'components/Footer';
 import UserProfile from 'components/UserProfile';
+import './index.css';
 const Home = () => {
   return (
     <div className="home">
@@ -34,10 +32,6 @@ const Home = () => {
         </div>
         <div className="home__body__mid">
           <SearchBar />
-          <div className="home__body__mid__action">
-            <Button>Google Search</Button>
-            <Button>I'm Feeling Lucky</Button>
-          </div>
         </div>
         <div className="home__body__bottom"></div>
       </main>
