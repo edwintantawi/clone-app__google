@@ -4,6 +4,12 @@
   margin-left: 15px;
 }
 
+.userProfile.floating {
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
 .userProfile button {
   padding: 8px;
 }

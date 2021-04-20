@@ -3,9 +3,9 @@ import { Avatar, IconButton } from '@material-ui/core';
 import AppsIcon from '@material-ui/icons/Apps';
 import './index.css';
 
-const UserProfile = () => {
+const UserProfile = ({ className }) => {
   return (
-    <div className="userProfile">
+    <div className={`userProfile ${className}`}>
       <IconButton>
         <AppsIcon />
       </IconButton>

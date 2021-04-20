@@ -43,3 +43,9 @@ a.button {
 .container {
   margin-left: 129px;
 }
+
+@media screen and (max-width: 960px) {
+  .container {
+    margin-left: 0;
+  }
+}
