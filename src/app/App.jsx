@@ -14,7 +14,7 @@ const App = () => {
   const [{ term }] = useStateValue();
   return (
     <div className="app">
-      <Router>
+      <Router basename="#">
         <Switch>
           <Route path="/" exact component={Home} />
           {term == null ? (
