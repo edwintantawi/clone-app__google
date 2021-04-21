@@ -4,7 +4,7 @@
   margin-left: 15px;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 984px) {
   .userProfile.floating {
     position: absolute;
     right: 0;

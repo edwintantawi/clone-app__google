@@ -39,10 +39,19 @@
   align-items: flex-end;
   justify-content: center;
 }
+@media screen and (max-width: 530px) {
+  .home__body__top {
+    flex: 0.5;
+  }
+}
+.home__body__top img {
+  width: 272px;
+  height: auto;
+}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 530px) {
   .home__body__top img {
-    width: 50%;
+    width: 170px;
   }
 }
 .home__body__mid {

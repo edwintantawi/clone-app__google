@@ -1,13 +1,15 @@
 .result {
   max-width: 600px;
-  padding: 12px;
+  padding: 16px 12px;
   margin-bottom: 10px;
+  background-color: var(--white);
 }
 
 .result__url {
-  display: block;
   font-size: 0.875rem;
   margin-bottom: 6px;
+  display: flex;
+  align-items: center;
 }
 
 .result__title {

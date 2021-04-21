@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from 'components/SearchBar';
 import UserProfile from 'components/UserProfile';
@@ -18,6 +18,21 @@ const SearchResult = () => {
   const [{ term }] = useStateValue();
   const { data } = useGoogleSearch(term);
   console.info(data, term);
+
+  useEffect(() => {
+    const handleScrollWindow = () => {
+      const nav = document.querySelector('.searchResults__nav');
+      const pos = window.pageYOffset;
+
+      pos >= 40 ? nav.classList.add('active') : nav.classList.remove('active');
+    };
+
+    window.addEventListener('scroll', handleScrollWindow);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollWindow);
+    };
+  }, []);
 
   return (
     <div className="searchResults">
