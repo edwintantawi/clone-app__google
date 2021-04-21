@@ -61,19 +61,7 @@
   height: 140px;
   padding: 26px 16px 0;
 }
-.home__body__mid__action {
-  margin-top: 14px;
-}
-.home__body__mid__action button {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8;
-  text-transform: none;
-  padding: 6px 16px;
-  margin: 11px 4px;
-}
-.home__body__mid__action button:hover {
-  background-image: linear-gradient(to top, #eeeeee, #f8f8f8);
-}
+
 .home__body__bottom {
   flex: 1;
 }

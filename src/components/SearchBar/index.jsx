@@ -16,17 +16,27 @@ const SearchBar = ({ isResult, value }) => {
 
   const searching = (e) => {
     e.preventDefault();
-    dispatch({
-      type: actionTypes.SET_SEARCH_TERM,
-      value: input,
-    });
+    if (input !== '') {
+      dispatch({
+        type: actionTypes.SET_SEARCH_TERM,
+        value: input,
+      });
 
-    history.push('/search');
+      history.push('/search');
+    }
+  };
+
+  const handleClearInput = () => {
+    setInput('');
   };
 
   return (
-    <form onSubmit={searching} style={{ width: isResult && '690px' }}>
-      <div className={`search ${activeSearch && 'focused'}`}>
+    <form
+      className="search"
+      onSubmit={searching}
+      style={{ width: isResult && '690px' }}
+    >
+      <div className={`search__bar ${activeSearch && 'focused'}`}>
         {isResult || <SearchIcon />}
         <input
           type="text"
@@ -35,14 +45,21 @@ const SearchBar = ({ isResult, value }) => {
           onBlur={() => setActiveSearch(false)}
           onChange={(e) => setInput(e.target.value)}
         />
-        <ClearIcon className="clickable" />
-        <hr />
+        {input && (
+          <div className="search__clear">
+            <ClearIcon className="clickable" onClick={handleClearInput} />
+            <hr />
+          </div>
+        )}
         <img src={micLogo} alt="mic" width="24px" className="clickable" />
-        {isResult && <SearchIcon className="active" />}
+        {isResult && <SearchIcon className="active" onClick={searching} />}
       </div>
-      <div className={`home__body__mid__action ${isResult && 'hide'}`}>
-        <Button type="submit">Google Search</Button>
-        <Button>I'm Feeling Lucky</Button>
+
+      <div className={`search__buttons ${isResult && 'hide'}`}>
+        <Button className="search__button" type="submit">
+          Google Search
+        </Button>
+        <Button className="search__button">I'm Feeling Lucky</Button>
       </div>
     </form>
   );

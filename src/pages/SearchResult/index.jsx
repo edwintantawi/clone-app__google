@@ -9,10 +9,10 @@ import icon_images from 'assets/images.svg';
 import icon_shopping from 'assets/shopping.svg';
 import icon_videos from 'assets/videos.svg';
 import icon_more from 'assets/more.svg';
-import './index.css';
 import Result from 'components/Result';
 import useGoogleSearch from 'hooks/useGoogleSearch';
 import { useStateValue } from 'provider/stateProvider';
+import './index.css';
 
 const SearchResult = () => {
   const [{ term }] = useStateValue();
